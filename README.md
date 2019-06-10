@@ -1,6 +1,6 @@
 # captured_50x_BED
 
-This repository contains scripts that were used to make the `captured_50x_partsRef.bed` file.
+This repository contains scripts that were used to make the `captured_50x_morex_v2_ref.bed` file.
 
 The Morex reads were from the [Mascher et al. 2013 *The Plant Journal* paper](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4241023/). The SRA BioProject number for the reads is: **PRJEB1810**. The SRA number for the reads is: [**ERP002487**](https://trace.ncbi.nlm.nih.gov/Traces/sra/sra.cgi?study=ERP002487).
 
