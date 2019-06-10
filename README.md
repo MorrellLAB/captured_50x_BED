@@ -31,7 +31,7 @@ Convert SRA to FASTQ:
 Do some quality checks using
 
 
-#### Step 1: Aligm reads to morex reference
+#### Step 1: Align reads to morex reference
 
 Use sequence_handling for read mapping. Used read mapping parameters in Tom Kono's first deleterious mutations paper located in [this GitHub repository](https://github.com/MorrellLAB/Deleterious_Mutations/tree/master/Job_Scripts).
 
