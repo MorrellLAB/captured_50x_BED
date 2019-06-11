@@ -6,6 +6,8 @@ The Morex reads were from the [Mascher et al. 2013 *The Plant Journal* paper](ht
 
 In this case, we are using Morex sample: **ERR271706**
 
+Link to EMBL-EBI is: https://www.ebi.ac.uk/ena/data/view/ERR271706
+
 Scripts used to make the `captured_50x_partsRef.bed` file for Morex v1 are located in the `morex_v1` directory. Methods described below are for `morex_v2`.
 
 ---
