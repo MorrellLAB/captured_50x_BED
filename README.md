@@ -18,20 +18,17 @@ For steps that require [`sequence_handling`](https://github.com/MorrellLAB/seque
 
 #### Step 0: Prepare files
 
-Download SRA file:
+Download FASTQ files directly from FTP links:
 
 ```bash
 qsub sra_download.sh
 ```
 
-Convert SRA to FASTQ:
+Do some quality checks using sequence_handling:
 
 ```bash
-
+./sequence_handling Quality_Assessment /panfs/roc/groups/9/morrellp/liux1299/GitHub/captured_50x_BED/morex_v2/morex_v2_pseudomolecules_config
 ```
-
-Do some quality checks using
-
 
 #### Step 1: Align reads to morex reference
 
