@@ -1,0 +1,3 @@
+Sample name	Encoding	Read length	Number of reads	Read depth	%GC	Deduplicated percentage	Per base sequence quality	Per tile sequence quality	Per sequence quality scores	Per base sequence content	Per sequence GC content	Per base N content	Sequence length distribution	Sequence duplication levels	Overrepresented sequences	Adapter content	Kmer content
+ERR271706_1	Sanger / Illumina 1.9	101	284371659	359	47	59.74294710421367	PASS	WARN	PASS	PASS	WARN	PASS	PASS	WARN	PASS	PASS	FAIL
+ERR271706_2	Sanger / Illumina 1.9	101	284371659	359	47	61.72433032003806	PASS	FAIL	PASS	PASS	WARN	PASS	PASS	WARN	PASS	PASS	FAIL
