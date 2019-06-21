@@ -86,7 +86,8 @@ QA_QSUB="mem=1gb,nodes=1:ppn=4,walltime=6:00:00"
 
 #   Provide a list of FastQ, SAM, or BAM files to be used
 #       Include the full file path.
-QA_SAMPLES=/scratch.global/liux1299/sra_downloads/cap50x_fastq_list.txt
+#QA_SAMPLES=/scratch.global/liux1299/sra_downloads/cap50x_fastq_list.txt
+QA_SAMPLES=/panfs/roc/groups/9/morrellp/shared/Projects/captured_50x/parts_ref/Adapter_Trimming/cap50x_parts_trimmed_adapters.txt
 
 #   What is the size of the genome (for whole-genome sequencing)
 #   or capture region (for exome capture)?
