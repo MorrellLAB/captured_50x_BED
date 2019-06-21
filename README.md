@@ -27,7 +27,16 @@ qsub sra_download.sh
 Do some quality checks using sequence_handling:
 
 ```bash
-./sequence_handling Quality_Assessment /panfs/roc/groups/9/morrellp/liux1299/GitHub/captured_50x_BED/morex_v2/morex_v2_pseudomolecules_config
+./sequence_handling Quality_Assessment /panfs/roc/groups/9/morrellp/liux1299/GitHub/captured_50x_BED/morex_v2/morex_v2_parts_ref_config
+```
+
+Trim adapters:
+
+```bash
+./sequence_handling Adapter_Trimming /panfs/roc/groups/9/morrellp/liux1299/GitHub/captured_50x_BED/morex_v2/morex_v2_parts_ref_config
+
+# Run QA on trimmed samples
+./sequence_handling Quality_Assessment /panfs/roc/groups/9/morrellp/liux1299/GitHub/captured_50x_BED/morex_v2/morex_v2_parts_ref_config
 ```
 
 #### Step 1: Align reads to morex reference
@@ -36,9 +45,6 @@ Use sequence_handling for read mapping. Used read mapping parameters in Tom Kono
 
 **Parts reference:**
 
-```bash
-./sequence_handling
-```
 
 **Pseudomolecules reference:**
 
