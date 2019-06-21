@@ -173,11 +173,11 @@ QT_THRESHOLD=
 #   What are our QSub settings for Read_Mapping?
 #       Below are the recommended settings
 #       For large files, it may be necessary to use mesabi
-RM_QSUB="mem=22gb,nodes=1:ppn=16,walltime=24:00:00"
+RM_QSUB="mem=22gb,nodes=1:ppn=16,walltime=12:00:00"
 
 #   Where is our list of trimmed samples?
 #       Include the full file path.
-TRIMMED_LIST=
+TRIMMED_LIST=/panfs/roc/groups/9/morrellp/shared/Projects/captured_50x/parts_ref/Adapter_Trimming/cap50x_parts_trimmed_adapters.txt
 
 #   How are trimmed forward samples named?
 #       If using the Adapter_Trimming handler
@@ -203,7 +203,7 @@ SINGLES_TRIMMED=_Single_ScytheTrimmed.fastq.gz
 #   BWA mem parameters; below are the defaults for BWA mem
 #       Note that you may need to adjust parameters based on species
 #       How many threads are we using?
-THREADS=8
+THREADS=16
 
 #       What is our minimum seed length?
 SEED=8
@@ -233,7 +233,7 @@ GAP=8
 EXTENSION=1
 
 #       What is our clipping penalty?
-CLIP=5
+CLIP=6
 
 #       What is our unpaired read penatly?
 UNPAIRED=9
