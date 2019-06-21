@@ -206,7 +206,7 @@ SINGLES_TRIMMED=_Single_ScytheTrimmed.fastq.gz
 THREADS=16
 
 #       What is our minimum seed length?
-SEED=8
+SEED=10
 
 #       What is the band width?
 WIDTH=100
