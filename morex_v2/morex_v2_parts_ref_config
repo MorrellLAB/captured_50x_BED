@@ -173,7 +173,7 @@ QT_THRESHOLD=
 #   What are our QSub settings for Read_Mapping?
 #       Below are the recommended settings
 #       For large files, it may be necessary to use mesabi
-RM_QSUB="mem=22gb,nodes=1:ppn=16,walltime=12:00:00"
+RM_QSUB="mem=22gb,nodes=1:ppn=16,walltime=32:00:00"
 
 #   Where is our list of trimmed samples?
 #       Include the full file path.
