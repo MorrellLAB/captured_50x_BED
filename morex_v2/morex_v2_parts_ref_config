@@ -271,12 +271,12 @@ VERBOSITY='all'
 
 #   What are our QSub settings for SAM_Processing?
 #       Below are the recommended settings
-SP_QSUB="mem=22gb,nodes=1:ppn=16,walltime=24:00:00"
+SP_QSUB="mem=22gb,nodes=1:ppn=16,walltime=18:00:00"
 
 #   Specify how you would like your SAM files to be processed
 #       Choose from:
 #           'picard' (recommended) or 'samtools'
-METHOD=
+METHOD=picard
 
 # Number of threads used for SAM_Processing
 # Using more threads requires more memory
@@ -286,7 +286,7 @@ SAM_PROCESSING_THREADS=
 #   Where is the list of read-mapped samples?
 #       To generate this list, use sample_list_generator.sh
 #       located at /sequence_handling/HelperScripts/sample_list_generator.sh
-MAPPED_LIST=
+MAPPED_LIST=/panfs/roc/groups/9/morrellp/shared/Projects/captured_50x/parts_ref/Read_Mapping/cap50x_sam_list.txt
 
 #   The next two variables are only used if processing with Picard
 #   If using SAMtools, leave these variables blank
@@ -301,7 +301,7 @@ MAX_FILES=1000
 #       If you've encountered issues with running out of temp space
 #           with picard, you can optionally specify a temp directory
 #       Otherwise, leave blank
-TMP=
+TMP=/scratch.global/liux1299
 
 ############################################
 ##########    Coverage_Mapping    ##########
