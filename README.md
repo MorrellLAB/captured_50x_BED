@@ -46,9 +46,14 @@ Use sequence_handling for read mapping. Used read mapping parameters in Tom Kono
 **Parts reference:**
 
 ```bash
+# Read mapping
 ./sequence_handling Read_Mapping /panfs/roc/groups/9/morrellp/liux1299/GitHub/captured_50x_BED/morex_v2/morex_v2_parts_ref_config
+
+# SAM Processing with Picard
+./sequence_handling SAM_Processing /panfs/roc/groups/9/morrellp/liux1299/GitHub/captured_50x_BED/morex_v2/morex_v2_parts_ref_config
 ```
 
 **Pseudomolecules reference:**
+
 
 
