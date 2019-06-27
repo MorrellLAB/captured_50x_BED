@@ -271,7 +271,7 @@ VERBOSITY='all'
 
 #   What are our QSub settings for SAM_Processing?
 #       Below are the recommended settings
-SP_QSUB="mem=48gb,nodes=1:ppn=16,walltime=18:00:00"
+SP_QSUB="mem=62gb,nodes=1:ppn=16,walltime=18:00:00"
 
 #   Specify how you would like your SAM files to be processed
 #       Choose from:
