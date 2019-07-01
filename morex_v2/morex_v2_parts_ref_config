@@ -327,12 +327,12 @@ REGIONS_FILE=
 
 #   What are our Qsub settings for Realigner_Target_Creator?
 #       Below are the recommended settings
-RTC_QSUB="mem=22gb,nodes=1:ppn=16,walltime=24:00:00"
+RTC_QSUB="mem=22gb,nodes=1:ppn=16,walltime=08:00:00"
 
 #   Where is the list of finished BAM files?
 #       To generate this list, use sample_list_generator.sh
 #       located at /sequence_handling/HelperScripts/sample_list_generator.sh
-RTC_BAM_LIST=
+RTC_BAM_LIST=/panfs/roc/groups/9/morrellp/shared/Projects/captured_50x/parts_ref/SAM_Processing/Picard/cap50x_bed_bam_list.txt
 
 ############################################
 #########     Indel_Realigner      #########
