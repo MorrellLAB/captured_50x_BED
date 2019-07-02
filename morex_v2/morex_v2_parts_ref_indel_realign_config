@@ -56,7 +56,7 @@ FIX_QUALITY_SCORES=false
 
 #   What are our Qsub settings for Realigner_Target_Creator?
 #       Below are the recommended settings
-RTC_QSUB="mem=22gb,nodes=1:ppn=16,walltime=08:00:00"
+RTC_QSUB="mem=22gb,nodes=1:ppn=12,walltime=08:00:00"
 
 #   Where is the list of finished BAM files?
 #       To generate this list, use sample_list_generator.sh
