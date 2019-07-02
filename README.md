@@ -55,5 +55,14 @@ Use sequence_handling for read mapping. Used read mapping parameters in Tom Kono
 
 **Pseudomolecules reference:**
 
+#### Step 2: Realign around indels
 
+**Parts reference:**
+
+Used `sequence_handling` to do indel realignment.
+
+```bash
+# Realigner Target Creator
+./sequence_handling Realigner_Target_Creator /panfs/roc/groups/9/morrellp/liux1299/GitHub/captured_50x_BED/morex_v2/morex_v2_parts_ref_config
+```
 
