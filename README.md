@@ -64,5 +64,8 @@ Used `sequence_handling` to do indel realignment.
 ```bash
 # Realigner Target Creator
 ./sequence_handling Realigner_Target_Creator /panfs/roc/groups/9/morrellp/liux1299/GitHub/captured_50x_BED/morex_v2/morex_v2_parts_ref_config
+
+# Indel realignment
+./sequence_handling Indel_Realigner /panfs/roc/groups/9/morrellp/liux1299/GitHub/captured_50x_BED/morex_v2/morex_v2_parts_ref_indel_realign_config
 ```
 
