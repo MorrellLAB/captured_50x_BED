@@ -69,17 +69,17 @@ RTC_BAM_LIST=/panfs/roc/groups/9/morrellp/shared/Projects/captured_50x/parts_ref
 
 #   What are our Qsub settings for Indel_Realigner?
 #       Below are the recommended settings
-IR_QSUB="mem=22gb,nodes=1:ppn=16,walltime=24:00:00"
+IR_QSUB="mem=22gb,nodes=1:ppn=16,walltime=12:00:00"
 
 #   Where is the list of finished BAM files?
 #       To generate this list, use sample_list_generator.sh
 #       located at /sequence_handling/HelperScripts/sample_list_generator.sh
-IR_BAM_LIST=
+IR_BAM_LIST=/panfs/roc/groups/9/morrellp/shared/Projects/captured_50x/parts_ref/SAM_Processing/Picard/cap50x_bed_bam_list.txt
 
 #   Where is the list of realigner targets files (.intervals)?
 #       To generate this list, use sample_list_generator.sh
 #       located at /sequence_handling/HelperScripts/sample_list_generator.sh
-IR_TARGETS=
+IR_TARGETS=/panfs/roc/groups/9/morrellp/shared/Projects/captured_50x/parts_ref/Realigner_Target_Creator/cap50x_rtc_intervals_list.txt
 
 #   IR_BAM_LIST and IR_TARGETS must have the same sample order.
 
