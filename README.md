@@ -63,9 +63,17 @@ Used `sequence_handling` to do indel realignment.
 
 ```bash
 # Realigner Target Creator
-./sequence_handling Realigner_Target_Creator /panfs/roc/groups/9/morrellp/liux1299/GitHub/captured_50x_BED/morex_v2/morex_v2_parts_ref_config
+./sequence_handling Realigner_Target_Creator /panfs/roc/groups/9/morrellp/liux1299/GitHub/captured_50x_BED/morex_v2/morex_v2_parts_ref_indel_realign_config
 
 # Indel realignment
 ./sequence_handling Indel_Realigner /panfs/roc/groups/9/morrellp/liux1299/GitHub/captured_50x_BED/morex_v2/morex_v2_parts_ref_indel_realign_config
+```
+
+#### Step 3: Filter intervals
+
+Then use bedtools genomecov and Tom's `refseq_capturedesign.py` script to filter intervals. The `refseq_capturedesign.py` script is called within the `morex_50x_BED.sh` script, which also stores the user provided input arguments.
+
+```bash
+qsub morex_v2_50x_BED.sh
 ```
 
