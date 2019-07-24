@@ -74,6 +74,6 @@ Used `sequence_handling` to do indel realignment.
 Then use bedtools genomecov and Tom's `refseq_capturedesign.py` script to filter intervals. The `refseq_capturedesign.py` script is called within the `morex_v2_50x_BED.sh` script, which also stores the user provided input arguments.
 
 ```bash
-qsub morex_v2_50x_BED.sh
+qsub morex_v2_parts_ref_50x_BED.sh
 ```
 
