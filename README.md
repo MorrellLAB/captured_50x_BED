@@ -77,3 +77,13 @@ Then use bedtools genomecov and Tom's `refseq_capturedesign.py` script to filter
 qsub morex_v2_parts_ref_50x_BED.sh
 ```
 
+There should be 3 output files from the `morex_v2_parts_ref_50x_BED.sh` script:
+1. `ERR271706_realigned_BED_Graph.txt`
+2. `ERR271706_realigned_BED_Graph_filtered.txt`
+3. `ERR271706_realigned_BED_Graph_captured_50x_partsRef.bed`
+
+The `*.txt` files are intermediate files and do not need to be kept. The `.bed` file is the one we care about. We will rename it to something more meaningful and put it in the references directory:
+
+```bash
+cp ERR271706_realigned_BED_Graph_captured_50x_partsRef.bed /panfs/roc/groups/9/morrellp/shared/References/Reference_Sequences/Barley/Morex_v2/captured_50x_morex_v2_partsRef.bed
+```
