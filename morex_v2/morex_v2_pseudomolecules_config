@@ -78,7 +78,7 @@ QA_QSUB="mem=1gb,nodes=1:ppn=4,walltime=6:00:00"
 
 #   Provide a list of FastQ, SAM, or BAM files to be used
 #       Include the full file path.
-QA_SAMPLES=/panfs/roc/scratch/liux1299/sra_downloads/cap50x_fastq_list.txt
+QA_SAMPLES=
 
 #   What is the size of the genome (for whole-genome sequencing)
 #   or capture region (for exome capture)?
@@ -172,7 +172,7 @@ RM_QSUB="mem=22gb,nodes=1:ppn=16,walltime=24:00:00"
 #       If you're using the list from Quality_Trimming
 #       TRIMMED_LIST=${OUT_DIR}/Quality_Trimming/${PROJECT}_trimmed_quality.txt
 #       Include the full file path.
-TRIMMED_LIST=${OUT_DIR}/Adapter_Trimming/${PROJECT}_trimmed_adapters.txt
+TRIMMED_LIST=/panfs/roc/groups/9/morrellp/shared/Projects/captured_50x/parts_ref/Adapter_Trimming/cap50x_parts_trimmed_adapters.txt
 
 #   How are trimmed forward samples named?
 #       If using the Adapter_Trimming handler
@@ -198,10 +198,10 @@ SINGLES_TRIMMED=_Single_ScytheTrimmed.fastq.gz
 #   BWA mem parameters; below are the defaults for BWA mem
 #       Note that you may need to adjust parameters based on species
 #       How many threads are we using?
-THREADS=8
+THREADS=16
 
 #       What is our minimum seed length?
-SEED=8
+SEED=10
 
 #       What is the band width?
 WIDTH=100
@@ -228,7 +228,7 @@ GAP=8
 EXTENSION=1
 
 #       What is our clipping penalty?
-CLIP=5
+CLIP=6
 
 #       What is our unpaired read penatly?
 UNPAIRED=9
@@ -664,7 +664,7 @@ module load vcftools_ML/0.1.14
 #export PATH=${VCFTOOLS}:${PATH}
 
 #   Do we have vcflib installed?
-module load vcflib_ML/1.0.0
+module load vcflib_ML/1.0.0_rc2
 #VCFLIB=
 #export PATH=${VCFLIB}:${PATH}
 
