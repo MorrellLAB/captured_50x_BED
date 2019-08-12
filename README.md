@@ -18,6 +18,8 @@ For steps that require [`sequence_handling`](https://github.com/MorrellLAB/seque
 
 #### Step 0: Prepare files
 
+The preparation steps only need to be run one time.
+
 Download FASTQ files directly from FTP links:
 
 ```bash
@@ -54,6 +56,13 @@ Use sequence_handling for read mapping. Used read mapping parameters in Tom Kono
 ```
 
 **Pseudomolecules reference:**
+
+```bash
+# Read mapping
+./sequence_handling Read_Mapping /panfs/roc/groups/9/morrellp/liux1299/GitHub/captured_50x_BED/morex_v2/morex_v2_pseudomolecules_config
+
+# SAM Processing with Picard
+```
 
 #### Step 2: Realign around indels
 
