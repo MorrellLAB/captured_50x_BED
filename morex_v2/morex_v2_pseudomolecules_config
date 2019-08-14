@@ -289,7 +289,7 @@ SAM_PROCESSING_THREADS=
 #   Where is the list of read-mapped samples?
 #       To generate this list, use sample_list_generator.sh
 #       located at /sequence_handling/HelperScripts/sample_list_generator.sh
-MAPPED_LIST=
+MAPPED_LIST=/panfs/roc/groups/9/morrellp/shared/Projects/captured_50x/pseudomolecules/Read_Mapping/cap50x_pseudo_sam_list.txt
 
 #   The next two variables are only used if processing with Picard
 #   If using SAMtools, leave these variables blank
