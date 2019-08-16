@@ -97,5 +97,12 @@ Since we have already created a 50x bed file using the parts reference with the 
 ```bash
 # In dir: ~/GitHub/File_Conversions
 # Convert parts to pseudomolecules
-./Barley_Parts_to_Pseudomolecules.py --bed ~/GitHub/captured_50x_BED/morex_v2/captured_50x_morex_v2_partsRef.bed > ~/GitHub/captured_50x_BED/morex_v2/captured_50x_morex_v2_pseudomolecules.bed
+./Barley_Parts_to_Pseudomolecules.py --bed ~/GitHub/captured_50x_BED/morex_v2/captured_50x_morex_v2_partsRef.bed > ~/GitHub/captured_50x_BED/morex_v2/temp_captured_50x_morex_v2_pseudomolecules.bed
+```
+
+Combine overlapping intervals.
+
+```bash
+module load bedtools_ML/2.28.0
+bedtools merge -i temp_captured_50x_morex_v2_pseudomolecules.bed > captured_50x_morex_v2_pseudomolecules.bed
 ```
