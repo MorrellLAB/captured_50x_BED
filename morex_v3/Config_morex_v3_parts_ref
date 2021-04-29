@@ -70,11 +70,11 @@ TMP=/scratch.global/liux1299/captured_50x_morex_v3/temp
 #   Which queue are we submitting the job to?
 #   Note: For USE_PBS, we can only specify one queue
 #         For USE_SLURM, we can specify multiple queues that are comma separated, no spaces (e.g., "small,ram256g,ram1t")
-RM_QUEUE="small,ram256g,ram1t"
+RM_QUEUE="ram256g,ram1t,amd2tb"
 
 #   USE_SLURM: What are our sbatch settings?
 #       Below are the recommended settings
-RM_SBATCH="--nodes=1 --ntasks-per-node=16 --mem=42gb --tmp=22gb -t 24:00:00 --mail-type=ALL --mail-user=${EMAIL} -p ${RM_QUEUE}"
+RM_SBATCH="--nodes=1 --ntasks-per-node=16 --mem=110gb --tmp=22gb -t 32:00:00 --mail-type=ALL --mail-user=${EMAIL} -p ${RM_QUEUE}"
 
 #   Where is our list of trimmed samples?
 #       Include the full file path.
@@ -173,20 +173,16 @@ VERBOSITY='all'
 #   Which queue are we submitting the job to?
 #   Note: For USE_PBS, we can only specify one queue
 #         For USE_SLURM, we can specify multiple queues that are comma separated, no spaces (e.g., "small,ram256g,ram1t")
-SP_QUEUE="small"
+SP_QUEUE="small,ram256g,ram1t"
 
 #   USE_SLURM: What are our sbatch settings?
 #       Below are the recommended settings
-SP_SBATCH="--nodes=1 --ntasks-per-node=16 --mem=22gb --tmp=8gb -t 24:00:00 --mail-type=ALL --mail-user=${EMAIL} -p ${SP_QUEUE}"
-
-#   USE_PBS: What are our QSub settings for SAM_Processing?
-#       Below are the recommended settings
-SP_QSUB="mem=22gb,nodes=1:ppn=16,walltime=24:00:00"
+SP_SBATCH="--nodes=1 --ntasks-per-node=16 --mem=56gb --tmp=22gb -t 24:00:00 --mail-type=ALL --mail-user=${EMAIL} -p ${SP_QUEUE}"
 
 #   Specify how you would like your SAM files to be processed
 #       Choose from:
 #           'picard' (recommended) or 'samtools'
-METHOD=
+METHOD='picard'
 
 #   Number of threads used for SAM_Processing
 #   Using more threads requires more memory
@@ -196,7 +192,7 @@ SAM_PROCESSING_THREADS=
 #   Where is the list of read-mapped samples?
 #       To generate this list, use sample_list_generator.sh
 #       located at /sequence_handling/HelperScripts/sample_list_generator.sh
-MAPPED_LIST=
+MAPPED_LIST=/scratch.global/liux1299/captured_50x_morex_v3/Read_Mapping/sam_list.txt
 
 #   The next two variables are only used if processing with Picard
 #       If using SAMtools, leave these variables blank
@@ -701,7 +697,7 @@ VF_SBATCH="--nodes=1 --ntasks-per-node=16 --mem=110gb --tmp=22gb -t 72:00:00 --m
 VF_QSUB="mem=110gb,nodes=1:ppn=16,walltime=72:00:00"
 
 #   Where is the VCF file to be filtered?
-#       If you ran Variant_Recalibrator and Pre_Variant_Filtering, this will be 
+#       If you ran Variant_Recalibrator and Pre_Variant_Filtering, this will be
 #       the .recalibrated.pass_sites.vcf.gz file
 VF_VCF=
 
