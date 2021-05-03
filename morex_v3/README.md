@@ -63,3 +63,10 @@ sed -e 's/::/\t/' ERR271706_realigned_BED_Graph_captured_50x_partsRef.bed | cut 
 ```
 
 Visually check that 50x regions look as expected using IGV.
+
+When running GATK variant calling, A `.intervals` or `.list` format for regions to call variants in works best. We'll create a `.intervals` format for the `.bed` file.
+
+```bash
+# In dir: /panfs/roc/groups/9/morrellp/shared/References/Reference_Sequences/Barley/Morex_v3
+sed -e "s/\t/:/" -e "s/\t/-/" captured_50x_morex_v3_partsRef.bed > captured_50x_morex_v3_partsRef.intervals
+```
